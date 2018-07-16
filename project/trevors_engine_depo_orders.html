@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JDM Depot</title>
+   <link href="css/styles.css" rel="stylesheet"/>
+   <link href="trevors_engine_depo." rel="stylesheet" />
+   <script src="js/myclock.js" defer> </script>
+</head>
+
+<body>
+  <header>
+   <a href="trevors_engine_depo_home.html"><img src="imgs/logo.png" id="logo"/></a>
+    <nav>
+      <ul>
+         <div class="topnav">
+        <li> <a href="trevors_engine_depo_about.html">Home</a></li>
+
+        <li> <a href="trevors_engine_depo_engine.html">Sponsors</a></li>
+
+        <li> <a href="trevors_engine_depo_orders.html">Orders</a></li>
+
+        <li> <a href="trevors_engine_depo_contact.html">Contact</a></li>
+      
+      </div>
+
+      </ul>
+    </nav>
+    </header>
+    <img src="imgs/acura_integra.jpg" id="teggy"/>
+      <h1>Order your Engine Now!</h1>
+      <article>
+         <h2>Engine selections</h2>
+      <form>
+         
+        
+        <img src="imgs/b20.png" width="300" height="152">
+        
+         <input type="checkbox" id="item1" value="200" />
+         <label for="item1">B20 ($200.00)</label>
+         
+        <img src="imgs/k24.jpg" width="300" height="152">
+        <input type="checkbox" id="item1" value="500" />
+         <label for="item1">K20 ($500.00)</label>
+
+         <img src="imgs/b18c5.png" width="300" height="152">
+         <label for="item1">B18C5 ($1950.00)</label>
+         <input type="checkbox" id="item1" value="20" />
+
+         <img src="imgs/2JZ.png" width="300" height="152">
+         <label for="item1">2JZ ($1000.00)</label>
+         <input type="checkbox" id="item1" value="1000" />
+
+         <img src="imgs/subi.png" width="300" height="152">
+         <label for="item1">EJ($459.00)</label>
+         <input type="checkbox" id="item1" value="459" />
+
+         <img src="imgs/rb25.png" width="300" height="152"/>
+         <label for="item1">RB25($2000.00)</label>
+         <input type="checkbox" id="item1" value="2000" />
+         
+
+         <input type="button" value="Submit" id="sButton" />
+      
+      </form>
+      <div>
+        <p id="total"></p>
+      </div>
+      <article>
+        <script>
+           document.getElementById("sButton").addEventListener("click", calcTotal, false);
+
+
+      function  calcTotal() {
+         var itemTotal = 0;
+         var items = document.getElementsByTagName("input");
+
+
+         for(var i = 0; i < items.length; i++) {
+            if(items[i].checked) {
+              itemTotal += (items[i].value * 1); 
+            }
+        
+         }
+            document.getElementById("total").innerHTML = "your total order is $ " + itemTotal + ".00";
+      
+
+      }
+
+       
+
+
+
+       </script>
+
+      </article>
+  
+  </header>
+  
+
+  <footer>
+  <img src="imgs/footer_logo.png" id="logo"> &copy; &#8226; 550 Woodridge Ave, Uniondale NY &nbsp; &#8226; 11553 516-543-2211
+  </footer>

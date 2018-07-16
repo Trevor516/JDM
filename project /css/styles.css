@@ -1,0 +1,147 @@
+
+
+/* HTML background*/
+html {
+	background:black;
+	background-attachment:fixed;
+    background-size: cover;
+
+}
+/*Body element styling */
+body {
+	color:red;
+    height: 100;
+	width:70%;
+	background: black;
+	margin-left:auto;
+	margin-right: auto;
+	box-shadow: 20px 0px 50px black, -20px 0px 50px black;
+}
+
+.brands {
+    background:white;
+}
+/* header styling*/
+header {
+	background:red;
+}
+
+
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+ /* Nav styling*/
+.nav a {
+    color:red;
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+#teggy {
+	background-attachment:fixed;
+    width:100%;
+	height:; 
+
+}
+
+/*Footer styling */
+footer {
+	background:black;
+	position: center;
+
+}
+
+ /* Add a black background color to the top navigation */
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+    display: none;
+} 
+
+/* ============================================
+    Tablet and Desktop Devices: 480px or more 
+   ============================================
+*/
+
+
+
+
+@media  screen and (max-width:480px) {
+    img#logo {
+       width: 50%;
+    }
+
+
+
+/* ============================================
+    Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+@media screen and (min-width: 481px) {
+    img#logo {
+        width: 50%;
+    }
+
+
+
+}
+
+

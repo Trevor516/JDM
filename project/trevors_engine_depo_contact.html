@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JDM Depot</title>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/contact.css" rel="stylesheet">
+   
+</head>
+
+<body>
+  <header>
+   <!-- image for the logo of the web page -->
+    <a href="trevors_engine_depo_home.html"><img src="imgs/logo.png" id="logo"/></a>
+
+     
+</div>
+   <!-- navigation for the 4 pages of the web site-->
+    <nav>
+      <ul>
+         <div class="topnav">
+        <li> <a href="trevors_engine_depo_home.html">Home</a></li>
+
+        <li> <a href="trevors_engine_depo_engine.html">Sponsors</a></li>
+
+        <li> <a href="trevors_engine_depo_orders.html">Orders</a></li>
+
+        <li> <a href="trevors_engine_depo_contact.html">Contact</a></li>
+      </div>
+
+        
+      </ul>
+    </nav>
+    </header>
+    <!-- image for the background -->
+    <img src="imgs/acura_integra.jpg" id="teggy"/>
+      <article>
+    <div class="container">
+  
+  <!-- form to create the contact Us list -->
+  <form>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Write your First Name...">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Write your Last Name...">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+        <option value="america">USA</option>
+        <option value="canada">Canada</option>
+        
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something..e" style="height:200px"></textarea>
+    <input type="button" id="button" value="submit" />
+   
+<!-- displays first and last names and says thank you-->
+    <script>
+  document.getElementById("button").addEventListener("click", function(){
+  var firstName = document.getElementById("fname").value;
+  var lastName = document.getElementById("lname").value;
+  window.alert("Thank you " + firstName + lastName); 
+  });
+
+    </script>
+  </form>
+  
+</div>
+    
+    
+    </article>
+  
+  </header>
+  
+<!-- bottom of the web page -->
+  <footer>
+  <img src="imgs/footer_logo.png" id="logo"> &copy; &#8226; 550 Woodridge Ave, Uniondale NY &nbsp; &#8226; 11553 516-543-2211
+  </footer>
